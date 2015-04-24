@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Climb</title>
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="grid.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Lato:400' rel='stylesheet' type='text/css'>
+    <script src="jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div class="clearfix main">
+        <div id="home"><img class="mtn" src="images/bg-blur.jpg"/>
+        <div class="container moveup">
+            <div class="grid_12 hometitle"><p class="slab-bold">Kilimanjaro, we're coming for you.</p></div>
+            <div class="grid_12"><h2 class="sans">A world record, an old man, a world-class hospital, and a lot of money.
+                <br/>  Find out more by scrolling down!</h2></div>
+            <div class="grid_7"><a class="donate" href="#">Help us. Give a tax-deductible donation today!</a></div>
+        </div>
+
+        </div>
+        <div id="story" class="paper">
+        <div class="container">
+            <div class="grid_12">
+                <p class="title slab-bold">The Story</p>
+                <p class="subtitle"><em>Why is Mayo working with a crazy old man?</em></p>
+            </div>
+        </div>
+        </div>
+
+        <div id="letter" class="paper">
+            <h1>the letter</h1>
+        </div>
+
+        <div id="people">
+            <h1>the people</h1>
+        </div>
+
+        <div id="cost">
+            <h1>the cost</h1>
+        </div>
+
+        <div id="cause">
+            <h1>the cause</h1>
+        </div>
+
+        <div id="sponsors">
+            <h1>the sponsors</h1>
+        </div>
+    <div id="nav" class="grid_12 footer">
+        <ul>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#story">THE STORY</a></li>
+            <li><a href="#people">THE PEOPLE</a></li>
+            <li><a href="#cost">THE COST</a></li>
+            <li><a href="#cause">THE CAUSE</a></li>
+            <li><a href="#sponsors">SPONSORS</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <script>
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                    || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 800);
+                    return false;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'TisaProRegular';
+    src: url('tisapro-regular.eot');
+    src: url('tisapro-regular.eot') format('embedded-opentype'),
+    url('tisapro-regular.woff') format('woff'),
+    url('tisapro-regular.ttf') format('truetype'),
+    url('tisapro-regular.svg#TisaProRegular') format('svg');
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-family: 'TisaProRegular';
+    font-size: 25px;
+    color: #2c3e50;
+    width: 800px;
+    line-height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grade {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #bdc3c7;
+}
+
+.header {
+    position: relative;
+    top: -50px;
+    background-color: #34495e;
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.content {
+    margin-top: 300px;
+}
+
+#headertext {
+    position: relative;
+    top: 65px;
+}
+
+#bar {
+    margin: 300px 0 0 0;
+    height: 20px;
+    width: 100%;
+    background-color: #16a085;
+}
+
+#subject {
+    font-weight: 900;
+    font-size: 100px;
+}
+
+#contenttitle {
+    font-size: 70px;
+    font-weight: 700;
+    color: #34495e;
+}
+
+#subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #7f8c8d;
+}

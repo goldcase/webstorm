@@ -1,0 +1,55 @@
+h1 {
+    font-family: 'ProximaNovaBold';
+}
+
+h1 {
+    font-size: 130px;
+    color: #222;
+}
+
+h2 {
+    position: relative;
+    top: -80px;
+    font-family: 'ProximaNovaLight';
+    font-size: 60px;
+    color: #333;
+}
+
+h3 {
+    font-family: 'ProximaNovaLight';
+    font-size: 30px;
+    color: #444;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'ProximaNovaRegular';
+}
+
+body {
+    text-align: left;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    position: relative;
+    top: -80px;
+}
+
+input {
+    font-family: 'ProximaNovaRegular';
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+}
+
+textarea {
+    font-family: 'ProximaNovaRegular';
+    font-size: 25px;
+}
+
+button {
+    font-size: 30px;
+}

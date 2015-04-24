@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Gemstore</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body ng-controller="StoreController as store"> <!-- Controller directive. store is alias for StoreController -->
+    <div ng-repeat="product in store.products">
+        <h1>{{ product.name }}</h1>
+        <h2>${{ product.price }}</h2>
+        <p>{{ product.description }}</p>
+        <button ng-show="store.product.canPurchase">Add To Cart</button>
+    </div>
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

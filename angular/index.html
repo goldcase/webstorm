@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Johnny Chang's Resum&eacute;</title>
+    <link rel="stylesheet" href="foundation.min.css"/>
+    <link rel="stylesheet" href="resume.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:700,700italic,400italic,400' rel='stylesheet' type='text/css' />
+    <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+</head>
+<body>
+    <div ng-controller="ResumeController">
+        <h1>Resum&eacute;</h1>
+        <h1 class="subheader">work experience</h1>
+            <table ng-repeat="item in items">
+                <tr>
+                    <td class="dates">{{item.times}}</td>
+                    <td>
+                        <div class="big">
+                            <span class="title">{{item.title}} &bull; </span>
+                            <span class="position">{{item.position}} </span>
+                        </div>
+                        <div class="details">
+                            <ul ng-repeat="detail in item.details">
+                                <li>{{detail.something}}</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+    </div>
+
+    <button ng-click="addInputs()">Add More Details</button>
+    <input ng-repeat="input in inputs" ng-show="$index <= shownInputs" ng-model="values[input.placheholder]" placeholder="{{input.placeholder}}">
+    <button ng-click="submit()">Submit (see console log)</button>
+
+    <script src="angular.min.js"></script>
+    <script src="controller.js" type="text/javascript"></script>
+
+</body>
+<footer>
+    <h5>Built with <a href="http://angularjs.org/">AngularJS</a> | Created by <a href="http://johnnychang.com/">Johnny Chang</a></h3>
+</footer>
+</html>

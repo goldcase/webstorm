@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <style>
+        .row {
+            width: 300px;
+            height: 100px;
+        }
+
+        td {
+            height: 100px;
+            width: 100px;
+            vertical-align: middle;
+            text-align: center;
+            border: solid;
+            font-size: 30px;
+            font-family: Helvetica;
+        }
+    </style>
+    <script>
+        var count = 2;
+
+        function fill(id) {
+            if (count % 2 == 0)
+                document.getElementById(id).innerHTML = "X";
+            else
+                document.getElementById(id).innerHTML = "O";
+            count++;
+            checkWin(id);
+        }
+
+        function checkWin(id) {
+
+        }
+        function checkDown(id) {
+            var num = Number(id);
+            
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr class="row">
+            <td id="1" onclick="fill(this.id)"></td>
+            <td id="2" onclick="fill(this.id)"></td>
+            <td id="3" onclick="fill(this.id)"></td>
+        </tr>
+        <tr class="row">
+            <td id="4" onclick="fill(this.id)"></td>
+            <td id="5" onclick="fill(this.id)"></td>
+            <td id="6" onclick="fill(this.id)"></td>
+        </tr>
+        <tr class="row">
+            <td id="7" onclick="fill(this.id)"></td>
+            <td id="8" onclick="fill(this.id)"></td>
+            <td id="9" onclick="fill(this.id)"></td>
+        </tr>
+    </table>
+</body>
+</html>

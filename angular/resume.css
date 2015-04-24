@@ -1,0 +1,59 @@
+h1, h5 {
+    text-align: center;
+}
+
+input {
+    font-size: 30px;
+    padding-left: 6px;
+}
+
+table {
+    padding: 0px 30px 20px 30px;
+    font-family: 'Merriweather', serif;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    color: #333;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    margin: -20px;
+}
+
+.dates {
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    width: 400px;
+}
+
+.big {
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    height: 2em;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.position {
+    font-weight: 400;
+}
+
+.details {
+    font-weight: 400;
+    font-size: 18px;
+    word-wrap:normal;
+    width: 800px;
+}
+
+.allinputs {
+    text-align: center;
+}

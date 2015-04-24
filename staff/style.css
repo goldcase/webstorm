@@ -1,0 +1,215 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: -15px;
+    padding: 0px;
+    text-shadow: 1px 2px 2px #000;
+    vertical-align: bottom;
+    background-color: rgba(0,0,0,0.35);
+    height: 80px;
+    min-width: 100%;
+}
+
+#home, #top, #story, #letter, #people, #cause, #cost, #sponsors {
+    height: 100vh;
+}
+
+.paper {
+    background:url("ricepaper_v3/ricepaper_v3.png");
+    background-repeat: repeat;
+}
+
+.moveup {
+    position: relative;
+    top: -900px;
+}
+
+h1 {
+    font-size: 90px;
+    color: #666;
+}
+
+h2 {
+    font-size: 30px;
+    color: #ecf0f1;
+    text-shadow: 1px 2px 3px #444;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+ul {
+    display: inline;
+    margin: 0 auto;
+    list-style: none;
+    color: #FFF;
+    min-width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Helvetica', sans-serif;
+}
+
+li {
+    float: left;
+    width: 19.4%;
+    padding:0px;
+    margin-top: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    color: #333;
+    text-shadow: 0 1px 2px #FFF;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin: 0;
+}
+
+.hometitle {
+    font-size: 90px;
+    color: #FFF;
+    line-height: 1.1;
+    margin-bottom: -100px;
+}
+
+.slab {
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+}
+
+.slab-bold {
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+}
+
+.sans {
+    font-family: 'Lato', sans-serif;
+}
+
+#underline {
+    border-bottom: 7px dotted #FFF;
+}
+
+.line {
+    position: relative;
+    top: -70px;
+}
+
+@keyframes movemtn {
+    from {left: 0px; top: 0px; -webkit-transform: scale(1);}
+    to {left: -60px; top: -40px; -webkit-transform: scale(1.2);}
+}
+
+@-webkit-keyframes movemtn /*Safari and Chrome*/
+{
+    from {left: 0px; top: 0px; -webkit-transform: scale(1);}
+    to {left: -60px; top: -40px; -webkit-transform: scale(1.2);}
+}
+
+.mtn {
+    height: 120vh;
+    min-width: 100%;
+    position: relative;
+    animation: movemtn 10s infinite;
+    -webkit-animation:movemtn 10s infinite;
+    animation-direction:alternate;
+    -webkit-animation-direction:alternate; /* Safari and Chrome */
+}
+
+/* Donate button */
+.donate {
+    z-index: 100;
+    margin-right: 10px;
+    padding: 20px 30px;
+    font-size: 30px;
+    line-height: 100%;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.1s ease-in-out;
+    -webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    -ms-transition: background 0.1s ease-in-out;
+    -o-transition: background 0.1s ease-in-out;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f68f67;
+    box-shadow: 7px 7px 0px 0px #d9460d;
+}
+.donate:active {
+    padding-top: 15px;
+    margin-bottom: -1px;
+}
+.donate, .donate:hover, .donate:active {
+    outline: 0 none;
+    text-decoration: none;
+    color: #fff;
+}
+.donate:hover {
+    background-color: #f36c37;
+}
+a.donate {
+    color:#FFF;
+}
+
+/**
+.learnmore {
+    z-index: 50;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #7f8c8d;
+    padding: 15px 26px;
+    line-height: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0px 3px 0px 0px #777;
+    color: #FFF;
+    vertical-align: bottom;
+    position: relative;
+    top: 25px;
+    transition: background 0.1s ease-in-out;
+    -webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    -ms-transition: background 0.1s ease-in-out;
+    -o-transition: background 0.1s ease-in-out;
+}
+
+.learnmore:active {
+    padding-top: 10px;
+    margin-bottom: -1px;
+}
+
+.learnmore:hover {
+    background-color: #95a5a6;
+}
+**/

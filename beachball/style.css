@@ -1,0 +1,244 @@
+/* Cloud_3 and Animation */
+.cloud_3 {
+    z-index: 0;
+    width: 100px;
+    height: 100px;
+    fill: white;
+    position: relative;
+    animation: cloud_3_move 70s infinite linear;
+    -webkit-animation: cloud_3_move 70s infinite linear;
+}
+
+@keyframes cloud_3_move {
+    from {left: 0px;}
+    to {left: 2000px;}
+}
+
+@-webkit-keyframes cloud_3_move {
+    from {left: 0px;}
+    to {left: 2000px;}
+}
+
+/* Cloud_2 and Animation */
+.cloud_2 {
+    z-index: 0;
+    position: relative;
+    top: -400px;
+    width: 200px;
+    height: 300px;
+    animation: cloud_2_move 40s infinite linear;
+    -webkit-animation: cloud_2_move 40s infinite linear;
+}
+
+@keyframes cloud_2_move {
+    from {left: -1000px;}
+    to {left: 1100px;}
+}
+
+@-webkit-keyframes cloud_2_move {
+    from {left: -1000px;}
+    to {left: 1100px;}
+}
+
+/* Cloud_1 and Animation */
+.cloud_1 {
+    width: 180px;
+    height: 170px;
+    fill: #ecf0f1;
+    position: relative;
+    top: 100px;
+    animation: cloud_1_move 30s infinite linear;
+    -webkit-animation: cloud_1_move 30s infinite linear;
+}
+
+@keyframes cloud_1_move {
+    from {left: -600px;}
+    to {left: 1500px;}
+}
+
+@-webkit-keyframes cloud_1_move {
+    from {left: -600px;}
+    to {left: 1500px;}
+}
+
+/* Down Arrow & Animation*/
+.downarrow {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 430px;
+    cursor: pointer;
+}
+
+.downarrow:hover {
+    animation: hover .5s infinite;
+    -webkit-animation: hover .5s infinite;
+    animation-direction:alternate;
+    -webkit-animation-direction:alternate;
+}
+
+@keyframes hover {
+    from {top: 430px;}
+    to {top: 415px;}
+}
+
+@-webkit-keyframes hover {
+    from {top: 430px;}
+    to {top: 415px;}
+}
+
+/* Submission Style */
+#mailchimp {
+    padding: 20px 10px;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 33vh;
+}
+
+#mailchimp input {
+    border: medium none;
+    color: #666;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    height: 20px;
+    width: 300px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+    display: inline;
+    position: relative;
+    left: 40px;
+}
+
+#mailchimp input[type="submit"] {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-style: normal;
+    color: #fff;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    padding: 8px 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f38630;
+    box-shadow: 0px 3px 0px 0px #cc5d0d;
+    position: relative;
+    top: -49px;
+    left: 390px;
+}
+
+#mailchimp input[type="submit"]:hover {
+    background-color: #e67e22;
+    transition: background 0.1s ease-in-out;
+    -webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    -ms-transition: background 0.1s ease-in-out;
+    -o-transition: background 0.1s ease-in-out;
+}
+
+#mailchimp input[type="submit"]:active {
+    background-color: #d35400;
+}
+
+/* Title */
+.together {
+    position: relative;
+    top: 30vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Oxygen', sans-serif;
+    color: #FFFFFF;
+    font-size: 80px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #A7DBD8;
+    font-weight: 300;
+    letter-spacing: 7px;
+}
+
+/* Background */
+html {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: -webkit-gradient(
+        linear,
+        top,
+        bottom,
+        color-stop(0, #246FA8),
+        color-stop(1, #57C1EB)
+    );
+    background-image: -o-linear-gradient(bottom, #246FA8 0%, #57C1EB 100%);
+    background-image: -moz-linear-gradient(bottom, #246FA8 0%, #57C1EB 100%);
+    background-image: -webkit-linear-gradient(bottom, #246FA8 0%, #57C1EB 100%);
+    background-image: -ms-linear-gradient(bottom, #246FA8 0%, #57C1EB 100%);
+    background-image: linear-gradient(to bottom, #246FA8 0%, #57C1EB 100%);
+    min-height: 100%;
+}
+
+/* Container */
+.container {
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.nav-ul {
+    z-index: 100;
+    padding: 20px;
+    background: rgba(0,0,0,0.12);
+    list-style-type: none;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    width: 100vw;
+    position: fixed;
+    top: -19px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.nav-li {
+    display: inline;
+    float: left;
+    width: 16.0%;
+    padding:0px;
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/** Still Clearfix
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
